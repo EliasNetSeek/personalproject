@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PROJECT BY NETSEEK
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @updateURL    https://raw.githubusercontent.com/EliasNetSeek/personalproject/master/script.js
 // @downloadURL  https://raw.githubusercontent.com/EliasNetSeek/personalproject/master/script.js
 // @description  try to take over the world!
@@ -16,9 +16,10 @@ var removeGamePanels = true;
 var refreshPageBool = true;
 var sendNotificationBool = false;
 var collapseChatBool = false;
+
+
+
 var captchaButtonClicked = false;
-
-
 var chatBoolPerm = true;
 
 function claimRain() {
