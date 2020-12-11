@@ -12,7 +12,7 @@
 
 
 // TEST AUTO UPDATE
-var removeGamePanels = false;
+var removeGamePanels = true;
 var refreshPageBool = true;
 var sendNotificationBool = false;
 var collapseChatBool = false;
@@ -34,14 +34,7 @@ function claimRain() {
     }
 
     if (removeGamePanels){
-        document.querySelectorAll('.section_right').forEach(function(a){
-            a.remove()
-        })
-
-        document.querySelectorAll('.chat_msgs').forEach(function(b){
-            b.remove()
-        })
-
+        removePanels();
     }
 	
 	
@@ -91,6 +84,17 @@ function claimRain() {
     setTimeout(claimRain, 3000);
 }
 
+function removePanels(){
+	setTimeout(function(){
+		document.querySelectorAll('.section_right').forEach(function(a){
+            a.remove()
+        })
+
+        document.querySelectorAll('.chat_msgs').forEach(function(b){
+            b.remove()
+        })
+	}, 60000);
+}
 
 function refreshPage(){
 	setTimeout(function(){
