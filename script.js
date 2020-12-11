@@ -1,16 +1,18 @@
 // ==UserScript==
-// @name         GAMDOM RAIN BY NETSEEK
+// @name         PROJECT BY NETSEEK
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  try to take over the world!
 // @author       NetSeek
 // @match        *://gamdom.com/*
 // @grant        none
 // ==/UserScript==
 
+
+// TEST AUTO UPDATE
 var removeGamePanels = false;
 var refreshPageBool = true;
-var sendNotificationBool = true;
+var sendNotificationBool = false;
 var collapseChatBool = false;
 var captchaButtonClicked = false;
 
